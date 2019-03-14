@@ -1,0 +1,91 @@
+page-manage-event {
+  // Settings Background Image
+  ion-card {
+      position: relative;
+      height: 215px;
+      border-radius: $border-radius;
+      @include darkening-blend-mode;
+      box-shadow: none;
+      margin-bottom: 16px;
+      //Card Title
+      [card-title] {
+        padding: 22px;
+        font-size: $h1-font-size !important;
+        white-space:nowrap;
+        position: relative;
+        z-index: 9999;
+        color: color($googleCard, card-title-full-images-cards) !important;
+      }
+      // Card Subtitle
+      [card-subtitle] {
+        padding: 22px;
+        position: absolute;
+        z-index: 9999;
+        bottom: 0;
+        width: 95%;
+        color: color($googleCard, card-subtitle-full-images-cards) !important;
+      }
+    }
+  
+  // HEADER (SEARCH BAR)
+  @include avatar(true);
+  ion-navbar {
+    z-index: 9999;
+    position: relative;
+  }
+  .back-button,
+  .toolbar-title {
+    color: theme-colors('textColors', 'secondaryBase') !important;
+  }
+  .toolbar-ios {
+    min-height: 64px;
+  }
+  .bar-button-default-ios,
+  .toolbar-title-ios {
+    padding-top: 20px;
+  }
+  
+  ion-toolbar {
+    position: absolute;
+    top: 0;
+  
+    .searchbar-ios .searchbar-input {
+      background-color: #f7f7f7 !important;
+    }
+  }
+  
+  ion-content {
+    top: 105px;
+    &.content-ios {
+      top: 95px;
+    }
+  }
+  
+     // Settings Big Image
+     [background-size] {
+      min-height: 160px!important;
+      @include darkening-blend-mode;
+      position: relative;
+  
+      [search-bar-bcg] {
+        position: absolute;
+        z-index: 2;
+        right: 8px;
+        left: 8px;
+        bottom: 8px;
+  
+        [search-bar-title] {
+          color: color($searchPage, search-title-field-header-1);
+          margin-bottom: 10px !important;
+        }
+  
+        .searchbar-input {
+          border-radius: 8px;
+        }
+      }
+    }
+  
+  
+    
+  }
+  
