@@ -1,0 +1,128 @@
+#leftright{
+    background-color: #f1f1f1;
+    box-shadow: 2px 1px 9px 10px #888888;
+    border: 1px solid black;
+    margin-left:5px;
+    margin-right:5px;
+    border-radius: 10px;
+   margin-top:7px;
+    display: flex;
+    padding-top:5px;
+    padding-bottom:5px;
+    
+}
+
+pre{
+    color: blue;
+    font-size: 25px;
+    text-shadow:4px 4px #88888888;
+text-align: center;
+}
+
+hr{
+    background-color:red;
+    height:5px;
+}
+
+table{
+    border:2px solid black;
+    margin:auto;
+}
+
+table td{
+    padding:2px;
+}
+
+#right{
+    border: 1px solid black;
+    
+    display:flex;
+    margin-right:5px;
+    
+}
+
+#price{
+    margin-left: 50px;
+    width: 80px;
+}
+
+#discount{
+    margin: 7px;
+
+}
+
+#labedis{
+    font-size: 13px;
+}
+
+#order{
+    font-size:13px; 
+    margin:8px;
+    padding:3px;
+    font-weight: bold;
+    background: blue;
+    color: white;
+    border: 1px solid black;
+}
+
+footer{
+    margin-top:0px;
+}
+
+fieldset{
+     border-top: 5px solid green;
+    border-left: 5px solid green;
+    border-right: 5px solid yellowgreen;
+    border-bottom: 5px solid yellowgreen; 
+    padding:5px;
+    margin:5px;
+}
+
+legend{
+    border-style: groove;
+    border-width:3px;
+    border-top: 3px solid red;
+    border-left: 3px solid maroon;
+    border-right: 3px solid maroon;
+    border-bottom: 3px solid red; 
+    padding:3px;
+    font-weight: bold;
+    background: yellow;
+    color: blue;
+}
+.info{
+margin:5px;
+
+}
+
+.one{
+    font-weight: bold;
+}
+
+.two{
+    padding:5px;
+}
+
+#note{
+    width:480px;
+    height:45px;
+    resize: none;
+}
+
+#rightinside{
+  flex:80%;
+}
+
+
+ .cate{
+    display: inline-block;
+    width: 15em;
+  list-style-type: none;
+padding:3px;
+    
+}
+
+
+.l1{
+    padding:3px;
+}

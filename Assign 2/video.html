@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="css/sitecss.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen" />
+    <title>Video</title>
+</head>
+
+<body>
+    <ul>
+        <li>
+            <a href="index.html">My zenit account</a>
+
+            <a href="index.html">Home</a>
+
+            <a href="gallery.html">Gallery</a>
+
+            <a href="video.html">Video</a>
+
+            <a href="audio.html">Audio</a>
+
+            <a href="table.html">Table with CSS</a>
+
+            <a href="pizza/index.html">Forms</a>
+
+            <a href="css/sitecss.css">CSS Used</a>
+
+
+        </li>
+    </ul>
+
+    <div id="firstcontent">
+        <div class="leftcontent">
+            <header>
+                <h1>Video</h1>
+            </header>
+
+            <div class="sec1">
+                <p>
+                    <b>Video implementation in HTML5</b>
+                </p>
+                <p>These days drones are everywhere, and so is the risk of bad actors using them to execute terrorist attacks,
+                    spying operations, and other illicit activities. For that reason, Fortem Technologies has built DroneHunter,
+                    a large drone that fires a massive net to capture any unauthorized drones flying over restricted areas.
+                    In the past, we've seen other solutions being deployed such as OpenWorks' net-firing gun or even training
+                    eagles to catch drones.
+                </p>
+            </div>
+
+            <div class="sec1">
+                <p>
+                    <b>Drone</b>
+                </p>
+
+                <video controls="controls">
+                    <source src="misc/drones.mp4" type="video/mp4" />
+                    <source src:="misc/drones_VP8.webm" type="video/webm" /> Your browser does not support the video tag / type
+                </video>
+
+                <script>
+                    var video = document.getElementsByTagName('video')[0];
+                </script>
+
+            </div>
+        </div>
+        <div class="indexdiv">
+            <aside>
+                <p>
+                    <b>
+                        <u>Video Control Options</u>
+                    </b>
+                </p>
+                <div id="v1">
+                    <button onclick="video.play();" type="button">Play Video</button>
+                    <button onclick="video.pause();" type="button">Pause Video</button>
+                    <button onclick="video.load();video.play()" type="button">Reset Video</button>
+                    <button onclick="video.load();video.controls=true;">Show Controls</button>
+                    <button onclick="video.load();video.controls=false;">Remove Controls</button>
+                </div>
+                <hr id="line">
+                <br />
+                <b>
+                    <u>Social Media Links</u>
+                </b>
+                <br />
+                <br />
+                <a id="imalink" href="https://www.facebook.com/" title="facebook">
+                    <img id="social" src="images/social-media.png" alt="imag" />
+                </a>
+
+            </aside>
+        </div>
+    </div>
+    <footer>
+        <div id="f">
+            <script>
+                var dt = new Date(document.lastModified);   // Get document last modified date
+                document.write('<p>This page was last updated on ' + dt.toLocaleString()) + '</p>';
+            </script>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/sitecss.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen" />
+
+    <title>Table with CSS</title>
+</head>
+
+<body>
+
+    <ul>
+        <li>
+            <a href="index.html">My zenit account</a>
+
+            <a href="index.html">Home</a>
+
+            <a href="gallery.html">Gallery</a>
+
+            <a href="video.html">Video</a>
+
+            <a href="audio.html">Audio</a>
+
+            <a href="table.html">Table with CSS</a>
+
+            <a href="pizza/index.html">Forms</a>
+
+            <a href="css/sitecss.css">CSS Used</a>
+
+
+        </li>
+    </ul>
+
+    <div id="firstcontent">
+
+        <div class="leftcontent">
+
+            <header>
+                <h1>Table with CSS</h1>
+            </header>
+            <div class="sec1">
+                <div id="main">
+                    <table id="tpg">
+                        <caption>
+                            HTML table with CSS
+                        </caption>
+                        <tr>
+                            <td class="co1">This</td>
+                            <td class="co1">Little</td>
+                            <td class="co1">Piggy</td>
+                            <td class="co2">Went</td>
+                            <td class="co2">To</td>
+                            <td class="co2">Market</td>
+                        </tr>
+                        <tr>
+                            <td class="co1" colspan="2">This</td>
+                            <td class="co1">Little</td>
+                            <td class="co1">Piggy</td>
+                            <td class="co2">Went</td>
+                            <td class="co2">To</td>
+                        </tr>
+                        <tr>
+                            <td class="co1" rowspan="2" colspan="2">This</td>
+                            <td class="co1" rowspan="2">Little</td>
+                            <td class="co2">Piggy</td>
+                            <td class="co2" rowspan="2">To</td>
+                            <td class="co2" rowspan="2">Market</td>
+                        </tr>
+                        <tr>
+                            <td class="co1">Went</td>
+
+                        </tr>
+                        <tr>
+                            <td class="co1">Little</td>
+                            <td class="co1">Piggy</td>
+                            <td class="co2">Went</td>
+                            <td class="co2">To</td>
+                            <td class="co2" colspan="2">Market</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="indexdiv">
+            <aside>
+                <p>
+                    <b>
+                        <u>CSS Properties Used</u>
+                    </b>
+                </p>
+                <div>
+                    <ol>
+                        <li>Border</li>
+                        <li>Margin Left</li>
+                        <li>Border Spacing</li>
+                        <li>Border Collapse</li>
+
+                    </ol>
+
+                </div>
+                <hr id="line" />
+                <br />
+                <b>
+                    <u>Social Media Links</u>
+                </b>
+                <br />
+                <br />
+                <a id="imalink" href="https://www.facebook.com/" title="facebook">
+                    <img id="social" src="images/social-media.png" alt="imag" />
+                </a>
+
+            </aside>
+        </div>
+    </div>
+    <footer>
+        <div id="f">
+            <script>
+                var dt = new Date(document.lastModified);   // Get document last modified date
+                document.write('<p>This page was last updated on ' + dt.toLocaleString()) + '</p>';
+            </script>
+        </div>
+    </footer>
+</body>
+
+</html>

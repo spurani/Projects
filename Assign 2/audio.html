@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/sitecss.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <title>Audio</title>
+</head>
+
+<body>
+    <ul>
+        <li>
+            <a href="index.html">My zenit account</a>
+
+            <a href="index.html">Home</a>
+
+            <a href="gallery.html">Gallery</a>
+
+            <a href="video.html">Video</a>
+
+            <a href="audio.html">Audio</a>
+
+            <a href="table.html">Table with CSS</a>
+
+            <a href="pizza/index.html">Forms</a>
+
+            <a href="css/sitecss.css">CSS Used</a>
+
+
+        </li>
+    </ul>
+
+    <div id="firstcontent">
+        <div class="leftcontent">
+            <header>
+                <h1>Audio</h1>
+            </header>
+            <div class="sec1">
+                <p>
+                    <b>Audio Implementation in HTML5</b>
+                </p>
+                <p>Classical music is art music produced or rooted in the traditions of Western culture, including both liturgical
+                    (religious) and secular music. While a more precise term is also used to refer to the period from 1750
+                    to 1820 (the Classical period), this information is about the broad span of time from before the 6th
+                    century AD to the present day, which includes the Classical period and various other periods. The central
+                    norms of this tradition became codified between 1550 and 1900, which is known as the common-practice
+                    period. </p>
+            </div>
+            <div class="sec1">
+                <p>
+                    <b>Classical Musical Instruments</b>
+                </p>
+                <figure>
+                    <audio controls="controls">
+                        <source src="misc/Track03.mp3" type="audio/mpeg" />
+                        <source src="misc/Track03.ogg" type="audio/ogg" /> Your browser does not support the audio tag used.
+                    </audio>
+                </figure>
+                <script>
+                    var audio = document.getElementsByTagName('audio')[0];
+
+                </script>
+            </div>
+        </div>
+        <div class="indexdiv">
+            <aside>
+                <p>
+                    <b>
+                        <u>Audio Control Options</u>
+                    </b>
+                </p>
+                <div id="v1">
+                    <button onclick="audio.play();" type="button">Play</button>
+                    <button onclick="audio.pause();" type="button">Pause</button>
+                    <button onclick="audio.volume=1;" type="button">Volume On</button>
+                    <button onclick="audio.volume=0;">Volume Off</button>
+                    <button onclick="audio.volume+=0.1;">Increase Volume</button>
+                    <button onclick="audio.volume-=0.1;">Decrease Volume</button>
+                </div>
+                <hr id="line">
+                <br />
+                <b>
+                    <u>Social Media Links</u>
+                </b>
+                <br />
+                <br />
+                <a id="imalink" href="https://www.facebook.com/" title="facebook">
+                    <img id="social" src="images/social-media.png" alt="imag" />
+                </a>
+
+            </aside>
+        </div>
+    </div>
+    <footer>
+        <div id="f">
+            <script>
+                var dt = new Date(document.lastModified);   // Get document last modified date
+                document.write('<p>This page was last updated on ' + dt.toLocaleString()) + '</p>';
+            </script>
+        </div>
+    </footer>
+</body>
+
+</html>
