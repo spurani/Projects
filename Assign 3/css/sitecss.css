@@ -1,0 +1,97 @@
+
+.allfieldset{  
+    border-top: 4px solid lightblue;
+    border-left: 4px solid lightblue;
+    border-bottom:4px solid blue;
+    border-right:4px solid blue;
+    padding-bottom: 50px;
+    padding-right:50px; 
+    float:left;
+    background-color: darkgrey;
+    margin-right: 10px;
+}
+
+.first{
+    
+    padding: 5px;
+    
+}
+
+
+.allegend{
+  
+    border-width:3px;
+    border-top: 3px solid red;
+    border-left: 3px solid maroon;
+    border-right: 3px solid maroon;
+    border-bottom: 3px solid red; 
+    font-weight: bold;
+    text-shadow: 2px 2px grey;
+    background: greenyellow;
+    margin-top: 5px;
+}
+
+.labelling{
+    display: inline-block;
+     width:140px; 
+    margin-top: 10px;
+   margin-bottom: 15px;
+  margin-left: -9px;
+}
+
+ .second{
+    display: inline-block;
+     margin-left:-5px; 
+    margin-right: 5px;
+    margin-top:10px;
+     margin-bottom:14px;
+} 
+
+.secondlwi{
+    display:block;
+    
+}
+
+#apt{
+      text-align: center;
+      margin-left: 25px;
+  }
+#postal{
+    margin-left:40px;
+}
+
+#payment{
+margin-left:70px;
+}
+
+.third{
+    display: inline-block;
+      width:210px; 
+      margin-top: 10px;
+      margin-bottom: 18px;
+  margin-left: -9px;
+}
+
+input{
+    border-left: 2px solid grey;
+}
+
+.fourth{
+    font-weight: bold;
+    background-color: lightslategray;
+}
+
+#fourthfieldset{
+     padding-right:10px; 
+   
+}
+
+#refNo{
+    margin-left: 10px;
+}
+
+#reserved{
+     height:170px; 
+    width: 750px;
+    overflow-y: scroll;
+}

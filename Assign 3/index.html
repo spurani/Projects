@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Seneca Bank - Credit Card Application</title>
+    <link rel="stylesheet" href="css/sitecss.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
+    <script src='javascript/myscript.js' type='text/javascript'></script>
+</head>
+
+<body>
+    <form id="application" name="application" action="https://zenit.senecac.on.ca/~emile.ohan/cgi-bin/cardApplication.cgi" onsubmit="return validateForm();">
+        <fieldset class="allfieldset">
+            <legend class="allegend">Seneca Bank - Credit Card Application</legend>
+            <div class="first">
+                <fieldset class="allfieldset">
+                    <legend class="allegend">Primary Applicant's Information</legend>
+                    <label class="labelling">First Name</label>
+                    <input name="fName" id="fName" type="text" size="20" maxlength="20" autofocus />
+                    <br />
+                    <label class="labelling">Surname</label>
+                    <input name="sName" id="sName" type="text" size="20" maxlength="30" />
+                    <br />
+                    <label class="labelling">Date of Birth</label>
+                    <input name="dob" id="dob" type="text" size="10" placeholder="MMMYYYY" maxlength="7" />
+                    <br />
+                    <label class="labelling">Email Address</label>
+                    <input name="email" id="email" type="text" size="20" maxlength="60" />
+                    <br />
+                    <label class="labelling">Phone No.</label>
+                    <input name="phone" id="phone" type="text" size="20" maxlength="12" />
+                    <br />
+                </fieldset>
+
+
+
+                <fieldset class="allfieldset">
+                    <legend class="allegend">Primary Applicant's Address</legend>
+                    <label class="second">
+                        <input name="address" id="address" type="text" size="30" maxlength="60" />
+                        <span class="secondlwi">Home Address</span>
+                    </label>
+                    <label class="second">
+                        <input name="apt" id="apt" type="text" size="5" maxlength="4" />
+                        <span class="secondlwi" id="apt">Apt</span>
+                    </label>
+                    <br>
+                    <label class="second">
+                        <input name="city" id="city" type="text" size="20" maxlength="40" />
+                        <span class="secondlwi"> City</span>
+                    </label>
+                    <br>
+
+                    <label class="second">
+                        <select id="province" name="province" size="2">
+                            <optgroup label="Province">
+                                <option value="Alberta">Alberta</option>
+                                <option value="British Columbia">British Columbia</option>
+                                <option value="Manitoba">Manitoba</option>
+                                <option value="New Brunswick">New Brunswick</option>
+                                <option value="Newfoundland & Labrador">Newfoundland & Labrador</option>
+                                <option value="Nova Scotia">Nova Scotia</option>
+                                <option value="Ontario">Ontario</option>
+                                <option value="Prince Edward Island">PE</option>
+                                <option value="Quebec">Quebec</option>
+                                <option value="Saskatchewan">Saskatchewan</option>
+                            </optgroup>
+                            <optgroup label="Territory">
+                                <option value="Northwest Territories">Northwest Territories</option>
+                                <option value="Nunavut">Nunavut</option>
+                                <option value="Yukon">Yukon</option>
+                            </optgroup>
+                        </select>
+                        <span class="secondlwi"> Province</span>
+                    </label>
+                    <label class="second">
+                        <input name="postal" id="postal" type="text" size="8" placeholder="ANA NAN" maxlength="7" />
+                        <span class="secondlwi" id="postal"> Postal Code</span>
+                    </label>
+                </fieldset>
+
+                <fieldset class="allfieldset">
+                    <legend class="allegend"> Housing Status</legend>
+                    <label class="second">
+                        <span class="secondlwi">Do You</span>
+                        <input type="checkbox" name="hStatus" id="s01" value="Own" />Own the property
+                        <br>
+                        <input type="checkbox" name="hStatus" id="s02" value="Rent" />Rent the property
+                    </label>
+
+                    <label class="second">
+                        <input type="text" size="8" maxlength="6" name="payment" id="payment" />
+                        <span class="secondlwi" id="payment">$Monthly Payment</span>
+                    </label>
+                    <br>
+
+                    <label class="third">Monthly Income</label>
+                    <input type="text" size="8" maxlength="6" name="income" id="income" />
+                    <br>
+
+                    <label class="third">Years at current location</label>
+                    <input type="text" size="3" maxlength="2" name="currYears" id="currYears" />
+                    <br>
+
+                    <label class="third">Pre-authorized Code</label>
+                    <input type="text" size="8" name="preCode" id="preCode" />
+
+                </fieldset>
+
+                <fieldset class="allfieldset" id="fourthfieldset">
+                    <legend class="allegend"> Credit Check / Email Consent</legend>
+                    <label class="fourth">I consent to have a credit check performed</label>
+                    <br>
+                    <input type="checkbox" name="creditCheck" id="c01" value="Yes" /> Yes
+                    <input type="checkbox" name="creditCheck" id="c02" value="No" /> No
+                    <br>
+                    <br>
+                    <label class="fourth">I consent to have email messages sent to me</label>
+                    <br>
+                    <input type="radio" name="emailConsent" id="m01" value="Yes" /> Yes
+                    <input type="radio" name="emailConsent" id="m02" value="No" /> No
+                    <br>
+                    <br> Submitted on:
+                    <label id="demo"> </label>
+                    <script>
+                        const monthNames = ["January", "February", "March", "April", "May", "June",
+                            "July", "August", "September", "October", "November", "December"
+                        ];
+                        n = new Date();
+                        y = n.getFullYear();
+                        m = monthNames[n.getMonth()];
+                        d = n.getDate();
+                        document.getElementById("demo").innerHTML = m + " " + d + ", " + y;
+                    </script>
+                    <label id="refNo">Ref. #</label>
+                    <input name="refNo" id="refNo" type="text" size="8" readonly/>
+                    <hr>
+                    <input type="submit" value="Submit Application" />
+                    <input type="reset" value="Start Over" />
+                </fieldset>
+
+                <fieldset class="allfieldset">
+                    <legend class="allegend">Reserved - See Below</legend>
+                    <div id="reserved"></div>
+                </fieldset>
+            </div>
+    </form>
+</body>
+
+</html>
